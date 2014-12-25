@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Paths | {% endblock title %}
+
+{% block jumbotron %}
+    Paths
+    <small>See the profiles below and choose the best learning path for you.</small>
+{% endblock jumbotron %}
+
+{% block content %}
+
+<!-- CHOOSE YOUR PATH -->
+<div class="row">
+  <div class="col-sm-12">
+
+    <!--
+    <div class="page-header page-header-with-icon no-mg-t">
+      <i class="fa fa-leaf"></i>
+      <h2>
+        Choose your path
+      </h2>
+    </div>
+    -->
+
+    <!-- ROW -->
+    <div class="row panels">
+
+      <div class="col-sm-4 panel-item">
+        <a class="panel panel-circle-contrast" href="#">
+          <div class="panel-icon">
+            <i class="fa fa-code icon"></i>
+          </div>
+          <div class="panel-body text-center">
+            <h3 class="panel-title">Programmer</h3>
+            <p>You already have programming skills and are looking to get better in biology.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4 panel-item">
+        <a class="panel panel-circle-contrast" href="#">
+          <div class="panel-icon">
+            <i class="fa fa-leaf icon"></i>
+          </div>
+          <div class="panel-body text-center">
+            <h3 class="panel-title">Biologist</h3>
+            <p>You have more than basic knowledge of biology or similar field.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-sm-4 panel-item">
+        <a class="panel panel-circle-contrast" href="#">
+          <div class="panel-icon">
+            <i class="fa fa-child icon"></i>
+          </div>
+          <div class="panel-body text-center">
+            <h3 class="panel-title">Rookie</h3>
+            <p>You're looking for a basic knowledge in both biology and programming.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="page-header page-header-with-icon">
+            <i class="fa fa-th"></i>
+            <h2>
+            STEP 1: Biology basics
+            </h2>
+        </div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+{% endblock content %}
