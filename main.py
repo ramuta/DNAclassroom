@@ -52,7 +52,12 @@ class MainHandler(Handler):
 
 class PathsHandler(Handler):
     def get(self):
-        self.render_template('paths.html')
+        self.redirect("/paths/programmer")
+
+
+class ProgrammerPathHandler(Handler):
+    def get(self):
+        self.render_template('paths/programmer.html')
 
 
 class ContactHandler(Handler):
@@ -95,5 +100,6 @@ def contact_form(email):
 app = webapp2.WSGIApplication([
                                   ('/', MainHandler),
                                   ('/paths', PathsHandler),
+                                  ('/paths/programmer', ProgrammerPathHandler),
                                   ('/contact', ContactHandler)
                               ], debug=True)
