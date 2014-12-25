@@ -14,7 +14,7 @@
         DNAclassroom
     </title>
 
-    <meta content="dna genome bioinformatics genomics biotech learn resources" name="keywords">
+    <meta content="dna genome bioinformatics genomics biotech learn resources classroom" name="keywords">
     <meta content="DNAclassrom - Bioinformatics and Biotech learning resources." name="description">
     <meta content="Matej Ramuta" name="author">
     <meta content="all" name="robots">
@@ -25,7 +25,11 @@
     <link href="/assets/images/meta_icons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
     <!-- / required stylesheets -->
     <link href="/assets/stylesheets/bootstrap/bootstrap.min.css" media="all" id="bootstrap" rel="stylesheet" type="text/css" />
-    <link href="/assets/stylesheets/jednotka_green.css" media="all" id="colors" rel="stylesheet" type="text/css" />
+
+    {% block css_theme %}
+        <link href="/assets/stylesheets/jednotka_green.css" media="all" id="colors" rel="stylesheet" type="text/css" />
+    {% endblock css_theme %}
+
     <!-- / not required stylesheets -->
     <link href="/assets/stylesheets/demo.css" media="all" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>

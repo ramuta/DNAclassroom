@@ -60,6 +60,11 @@ class ProgrammerPathHandler(Handler):
         self.render_template('paths/programmer.html')
 
 
+class BiologistPathHandler(Handler):
+    def get(self):
+        self.render_template('paths/biologist.html')
+
+
 class ContactHandler(Handler):
     def post(self):
         email = self.request.get("email")
@@ -78,16 +83,16 @@ class ContactHandler(Handler):
 
 def contact_form(email):
     message_body = '''
-		New email from DNAclassroom.com!
-		New subscriber:
-		Email: {0}
-	'''.format(email.encode('utf-8'))
+        New email from DNAclassroom.com!
+        New subscriber:
+        Email: {0}
+    '''.format(email.encode('utf-8'))
 
     html_message_body = '''
-		<p>New email from DNAclassroom.com!</p>
-		<p>New subscriber:</p>
-		<p>Email: {0}</p>
-	'''.format(email.encode('utf-8'))
+        <p>New email from DNAclassroom.com!</p>
+        <p>New subscriber:</p>
+        <p>Email: {0}</p>
+    '''.format(email.encode('utf-8'))
 
     message = mail.EmailMessage(sender="DNAclassroom <matt@ramuta.me>",
                                 to="matej.ramuta@gmail.com",
@@ -98,8 +103,24 @@ def contact_form(email):
 
 
 app = webapp2.WSGIApplication([
-                                  ('/', MainHandler),
-                                  ('/paths', PathsHandler),
-                                  ('/paths/programmer', ProgrammerPathHandler),
-                                  ('/contact', ContactHandler)
-                              ], debug=True)
+    ('/', MainHandler),
+    ('/paths', PathsHandler),
+    ('/paths/programmer', ProgrammerPathHandler),
+    ('/paths/biologist', BiologistPathHandler),
+    ('/contact', ContactHandler)
+], debug=True)
+
+
+def handle_404(request, response, exception):
+    t = jinja_env.get_template("404.html")
+    response.write(t.render())
+    response.set_status(404)
+
+
+def handle_500(request, response, exception):
+    t = jinja_env.get_template("500.html")
+    response.write(t.render())
+    response.set_status(500)
+
+app.error_handlers[404] = handle_404
+app.error_handlers[500] = handle_500

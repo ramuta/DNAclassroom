@@ -176,3 +176,11 @@ body.error-page, body.countdown-page {
 .title-white {
     color: #ffffff;
 }
+
+.inactive {
+    opacity: 0.4;
+}
+
+.inactive:hover {
+    opacity: 1;
+}
