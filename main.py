@@ -65,6 +65,11 @@ class BiologistPathHandler(Handler):
         self.render_template('paths/biologist.html')
 
 
+class RookiePathHandler(Handler):
+    def get(self):
+        self.render_template('paths/rookie.html')
+
+
 class ContactHandler(Handler):
     def post(self):
         email = self.request.get("email")
@@ -107,6 +112,7 @@ app = webapp2.WSGIApplication([
     ('/paths', PathsHandler),
     ('/paths/programmer', ProgrammerPathHandler),
     ('/paths/biologist', BiologistPathHandler),
+    ('/paths/rookie', RookiePathHandler),
     ('/contact', ContactHandler)
 ], debug=True)
 

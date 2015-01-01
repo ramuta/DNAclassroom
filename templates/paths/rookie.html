@@ -1,9 +1,9 @@
 {% extends "paths/paths_base.html" %}
 
-{% block title %}Biologist Path | {% endblock title %}
+{% block title %}Rookie Path | {% endblock title %}
 
 {% block css_theme %}
-    <link href="/assets/stylesheets/jednotka_green.css" media="all" id="colors" rel="stylesheet" type="text/css" />
+    <link href="/assets/stylesheets/jednotka_blue.css" media="all" id="colors" rel="stylesheet" type="text/css" />
 {% endblock css_theme %}
 
 {% block content %}
@@ -37,7 +37,7 @@
           </div>
 
           <div class="col-sm-4 panel-item">
-            <a class="panel panel-circle-contrast" href="/paths/biologist">
+            <a class="panel panel-circle-contrast inactive" href="/paths/biologist">
               <div class="panel-icon">
                 <i class="fa fa-leaf icon"></i>
               </div>
@@ -49,7 +49,7 @@
           </div>
 
           <div class="col-sm-4 panel-item">
-            <a class="panel panel-circle-contrast inactive" href="/paths/rookie">
+            <a class="panel panel-circle-contrast" href="/paths/rookie">
               <div class="panel-icon">
                 <i class="fa fa-child icon"></i>
               </div>
@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
-                    <i class="fa fa-leaf"></i>
+                    <i class="fa fa-code"></i>
                     <h2>
                     STEP 1: Programming basics
                     </h2>
@@ -127,9 +127,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
-                    <i class="fa fa-code"></i>
+                    <i class="fa fa-leaf"></i>
                     <h2>
-                    STEP 2: Bio programming basics
+                    STEP 2: Biology basics
                     </h2>
                 </div>
             </div>
@@ -140,20 +140,23 @@
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs" id="tab2">
                         <li class="active">
-                            <a data-toggle="tab" href="#tab2-content-1">Computing for Biologists</a>
+                            <a data-toggle="tab" href="#tab2-content-1">Khan Academy</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#tab2-content-2">BioInfo programming</a>
+                            <a data-toggle="tab" href="#tab2-content-2">CrashCourse</a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#tab2-content-3">Python for Biologists</a>
+                            <a data-toggle="tab" href="#tab2-content-3">Book</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab2-content-4">Side read</a>
                         </li>
                     </ul>
 
                     <div class="tab-content" id="tab2-content">
                         <div class="tab-pane fade in active" id="tab2-content-1">
-                            <h3>Recommended: Computing for Biologists</h3>
-                            <p><a href="http://www.amazon.co.uk/Computing-Biologists-Python-Programming-Principles/dp/1107642183/">Go to Computing for Biologists website</a></p>
+                            <h3>Recommended: Khan Academy Biology Course</h3>
+                            <p><a href="https://www.khanacademy.org/science/biology">Go to KhanAcademy Biology Website</a></p>
                             <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
                                 euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
                                 te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
@@ -161,8 +164,8 @@
                                 inciderint vituperatoribus.</p>
                         </div>
                         <div class="tab-pane fade" id="tab2-content-2">
-                            <h3>Alternative: BioInformatics programming using Python</h3>
-                            <p><a href="http://www.amazon.co.uk/Bioinformatics-Programming-Using-Python-Mitchell/dp/059615450X/">Go to BioInformatics programming using Python</a></p>
+                            <h3>Alternative: CrashCourse Biology</h3>
+                            <p><a href="https://www.youtube.com/playlist?list=PL3EED4C1D684D3ADF">Go to CrashCourse Biology Playlist on YouTube</a></p>
                             <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
                                 euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
                                 te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
@@ -170,9 +173,19 @@
                                 inciderint vituperatoribus.</p>
                         </div>
                         <div class="tab-pane fade" id="tab2-content-3">
-                            <h3>Alternative: Python for Biologists</h3>
-                            <p><a href="http://pythonforbiologists.com/">Go to Python for Biologists website</a></p>
+                            <h3>Alternative: Molecular & Cell Biology for Dummies</h3>
+                            <p><a href="http://www.dummies.com/store/product/Molecular-and-Cell-Biology-For-Dummies.productCd-0470430664.html">Go to book website</a></p>
                             <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
+                                euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
+                                te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
+                                postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
+                                inciderint vituperatoribus.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab2-content-4">
+                            <h3>Side reads</h3>
+                            <p><a href="http://www.amazon.co.uk/Genetic-Hacking-Your-DNA-Hacked-ebook/dp/B00C7NLIV8/">Genetic Hacking: Your DNA Can Be Hacked!</a></p>
+                            <p class="no-mg-b">
+                                Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
                                 euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
                                 te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
                                 postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
@@ -188,9 +201,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
-                    <i class="fa fa-rocket"></i>
+                    <i class="fa fa-laptop"></i>
                     <h2>
-                    STEP 3: Challenges
+                    STEP 3: Bio programming basics
                     </h2>
                 </div>
             </div>
@@ -201,37 +214,44 @@
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs" id="tab3">
                         <li class="active">
-                            <a data-toggle="tab" href="#tab3-content-1">P4B exercises</a>
+                            <a data-toggle="tab" href="#tab3-content-1">Computing for Biologists</a>
                         </li>
-
                         <li>
-                            <a data-toggle="tab" href="#tab3-content-2">Rosalind</a>
+                            <a data-toggle="tab" href="#tab3-content-2">BioInfo programming</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab3-content-3">Python for Biologists</a>
                         </li>
                     </ul>
 
                     <div class="tab-content" id="tab3-content">
-
                         <div class="tab-pane fade in active" id="tab3-content-1">
-                            <h3>Recommended: Python for Biologists exercises</h3>
-                            <p><a href="http://pythonforbiologists.com/index.php/introduction-to-python-for-biologists/2-printing-and-manipulating-text/">Go to Python for Biologists examples</a></p>
-                            <p class="no-mg-b">At the end of every section in Python pages you have a couple of simple exercises.
-                                Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
-                                euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
-                                te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
-                                postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
-                                inciderint vituperatoribus.</p>
-                        </div>
-
-                        <div class="tab-pane fade" id="tab3-content-2">
-                            <h3>Recommended: Rosalind challenges</h3>
-                            <p><a href="http://rosalind.info/problems/list-view/">Go to Rosalind Website</a></p>
+                            <h3>Recommended: Computing for Biologists</h3>
+                            <p><a href="http://www.amazon.co.uk/Computing-Biologists-Python-Programming-Principles/dp/1107642183/">Go to Computing for Biologists website</a></p>
                             <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
                                 euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
                                 te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
                                 postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
                                 inciderint vituperatoribus.</p>
                         </div>
-
+                        <div class="tab-pane fade" id="tab3-content-2">
+                            <h3>Alternative: BioInformatics programming using Python</h3>
+                            <p><a href="http://www.amazon.co.uk/Bioinformatics-Programming-Using-Python-Mitchell/dp/059615450X/">Go to BioInformatics programming using Python</a></p>
+                            <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
+                                euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
+                                te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
+                                postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
+                                inciderint vituperatoribus.</p>
+                        </div>
+                        <div class="tab-pane fade" id="tab3-content-3">
+                            <h3>Alternative: Python for Biologists</h3>
+                            <p><a href="http://pythonforbiologists.com/">Go to Python for Biologists website</a></p>
+                            <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
+                                euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
+                                te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
+                                postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
+                                inciderint vituperatoribus.</p>
+                        </div>
                     </div>
 
                 </div>
@@ -242,9 +262,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-header page-header-with-icon">
-                    <i class="fa fa-google"></i>
+                    <i class="fa fa-rocket"></i>
                     <h2>
-                    STEP 4: Google Genomics
+                    STEP 4: Challenges
                     </h2>
                 </div>
             </div>
@@ -255,15 +275,30 @@
                 <div class="tabbable tabs-left">
                     <ul class="nav nav-tabs" id="tab4">
                         <li class="active">
-                            <a data-toggle="tab" href="#tab4-content-1">Coming soon</a>
+                            <a data-toggle="tab" href="#tab4-content-1">P4B exercises</a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#tab4-content-2">Rosalind</a>
                         </li>
                     </ul>
 
                     <div class="tab-content" id="tab4-content">
 
                         <div class="tab-pane fade in active" id="tab4-content-1">
-                            <h3>Coming soon: Google Genomics Tutorials</h3>
-                            <p><a href="https://cloud.google.com/genomics/">Go to Google Genomics Website</a></p>
+                            <h3>Recommended: Python for Biologists exercises</h3>
+                            <p><a href="http://pythonforbiologists.com/index.php/introduction-to-python-for-biologists/2-printing-and-manipulating-text/">Go to Python for Biologists examples</a></p>
+                            <p class="no-mg-b">At the end of every section in Python pages you have a couple of simple exercises.
+                                Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
+                                euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
+                                te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
+                                postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim te repudiare
+                                inciderint vituperatoribus.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab4-content-2">
+                            <h3>Recommended: Rosalind challenges</h3>
+                            <p><a href="http://rosalind.info/problems/list-view/">Go to Rosalind Website</a></p>
                             <p class="no-mg-b">Lorem ipsum dolor sit amet, instructior conclusionemque pri an, reque principes
                                 euripidis in pri. Id postea periculis mel. Nam at dicta voluptatum, movet mundi commune ea eam, vim
                                 te repudiare inciderint vituperatoribus. Ex modo mucius volutpat quo, eos erat voluptua at, ad.  Id
