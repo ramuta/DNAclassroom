@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome | {% endblock title %}
+
+{% block css_theme %}
+    <link href="/assets/stylesheets/jednotka_mint.css" media="all" id="colors" rel="stylesheet" type="text/css" />
+{% endblock css_theme %}
+
+{% block jumbotron %}
+    <!-- / carousel blur -->
+    <div class="hero-carousel carousel-blur flexslider" id="carousel-example-1">
+      <ul class="slides">
+        <li class="item newimage">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 animate">
+                <h1 class="big fadeInUp animated">
+                  Want to learn biotech?
+                </h1>
+
+                <p class="normal fadeInUp animated">
+                    DNAclassroom helps you get on the <br> biotech & bioinformatics path that's right for you.
+                </p>
+
+                <a class="btn btn-contrast btn-lg fadeInRight animated" href="/paths">
+                  Choose your path
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+{% endblock jumbotron %}
+
+{% block content %}
+{% endblock content %}

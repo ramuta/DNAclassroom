@@ -47,6 +47,11 @@ class Handler(webapp2.RequestHandler):
 
 class MainHandler(Handler):
     def get(self):
+        self.render_template('main.html')
+
+
+class ComingSoonHandler(Handler):
+    def get(self):
         self.render_template('coming_soon.html')
 
 
@@ -108,7 +113,8 @@ def contact_form(email):
 
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
+    ('/', ComingSoonHandler),
+    ('/main', MainHandler),
     ('/paths', PathsHandler),
     ('/paths/programmer', ProgrammerPathHandler),
     ('/paths/biologist', BiologistPathHandler),
